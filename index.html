@@ -1,0 +1,172 @@
+<!-- Documentation
+    THIS IS AN OPEN SOURCE APP A COPY OF GNU GPL3 WILL BE PROVIDED WITH THIS SOFTWARE
+
+        THANK YOU FOR USING THIS APP AND READING THROUGH THIS DOCUMENTATION
+
+        THIS APP IS FIRST CREATED BY THEGREAT LORD OF TROY A.K.A ADIULTRA
+
+        YOU ARE ALWAYS FREE TO CHANGE ANY PIECE OF CODE AND ARE ENCOURAGED TO
+        CREATE THEMES FOR THIS SOFTWARE.
+
+        THIS SHOULD BE USED WITH ELECTRON http://electron.atom.io provides instruction to run an app like this.
+        The procedure might be different but the result will be the same.
+
+        Or you might open this app's index.html inyour favourite browser.
+
+         
+ -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Basic Calculator</title>
+
+        <script src="js/main.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    </head>
+
+    <body>
+
+        <form name="form">
+
+            <input name="result" class="result">
+
+            <table>
+
+                <tr>
+                    <td>
+                        <input type="button" name="1" value="1" onclick="run1()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="2" value="2" onclick="run2()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="3" value="3" onclick="run3()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="plus" value="+" onclick="runplus()" class="special" >
+                    </td>
+
+                    <td>
+                        <input type="button" name="clear" value="<" onclick="runclear()" class="redbutton">
+                    </td>
+
+                </tr>
+
+                <br />
+
+                <tr>
+                    <td>
+                        <input type="button" name="4" value="4" onclick="run4()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="5" value="5" onclick="run5()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="6" value="6" onclick="run6()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="diff" value="-" onclick="rundiff()"class="special" >
+                    </td>
+
+                    <td>
+                        <input type="button" name="deci" value="." onclick="rundeci()" class="special">
+                    </td>
+
+                </tr>
+
+
+                <br />
+
+                <tr>
+                    <td>
+                        <input type="button" name="7" value="7" onclick="run7()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="8" value="8" onclick="run8()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="9" value="9" onclick="run9()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="prod" value="*" onclick="runprod()" class="special">
+                    </td>
+
+                    <td>
+                        <input type="button" name="brktopen" value="(" onclick="runbrktopen()" class="special">
+                    </td>
+
+                </tr>
+
+
+                <br />
+
+                <tr>
+
+                    <td>
+                        <input type="button" name="calc" value="=" onclick="calcu()" class="grnbutton">
+                    </td>
+
+                    <td>
+                        <input type="button" name="0" value="0" onclick="run0()">
+                    </td>
+
+                    <td>
+                        <input type="button" name="modl" value="%" onclick="runmodl()" class="special">
+                    </td>
+
+                    <td>
+                        <input type="button" name="divi" value="/" onclick="rundivi()" class="special">
+                    </td>
+
+                    <td>
+                        <input type="button" name="brktcls" value=")" onclick="runbrktcls()" class="special">
+                    </td>
+
+
+                </tr>
+
+            </table>
+
+            <table>
+
+                <tr>
+
+                    <td>
+                        <input type="button" name="sine" value="sin&theta;" onclick="runsine()" class="fxn">
+                    </td>
+
+                    <td>
+                        <input type="button" name="cos" value="cos&theta;" onclick="runcos()" class="fxn">
+                    </td>
+
+                    <td>
+                        <input type="button" name="tan" value="tan&theta;" onclick="runtan()" class="fxn">
+                    </td>
+
+                    <td>
+                        <input type="button" name="sqrt" value="&radic;" onclick="runsqrt()" class="fxn">
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </form>
+
+    </body>
+
+</html>
